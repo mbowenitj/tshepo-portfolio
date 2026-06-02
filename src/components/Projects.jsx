@@ -5,20 +5,49 @@ import { enterpriseProjects, personalProjects, thumb } from '../data/portfolioDa
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 /* Two-level image fallback: local → thum.io → placeholder */
-function ProjectImage({ image, url, title }) {
-  const [src, setSrc]         = useState(image);
-  const [failed, setFailed]   = useState(false);
-  const fallbackUrl           = thumb(url);
+function ProjectImage({ image, imageMobile, url, title }) {
+  const [src, setSrc]       = useState(image);
+  const [failed, setFailed] = useState(false);
+  const fallbackUrl         = thumb(url);
 
-  if (failed) return null; // triggers FallbackPreview in parent
+  /* ── Dual layout: laptop + mobile side-by-side ────────── */
+  if (imageMobile) {
+    return (
+      <div style={{ position: 'relative', zIndex: 1, width: '100%', height: '100%', overflow: 'hidden', background: '#080814' }}>
+        {/* Laptop screenshot fills left ~70% */}
+        <img
+          src={image}
+          alt={`${title} desktop`}
+          loading="lazy"
+          decoding="async"
+          style={{ position: 'absolute', left: 0, top: 0, width: '73%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+        />
+        {/* Subtle gradient separator */}
+        <div style={{ position: 'absolute', left: '60%', top: 0, width: '18%', height: '100%', background: 'linear-gradient(to right, transparent, #080814)', zIndex: 1 }} />
+        {/* Mobile screenshot floats on the right */}
+        <div style={{ position: 'absolute', right: '4%', top: '50%', transform: 'translateY(-50%)', width: '28%', height: '88%', zIndex: 2, borderRadius: 14, overflow: 'hidden', border: '2px solid rgba(255,255,255,0.12)', boxShadow: '0 12px 40px rgba(0,0,0,0.6)' }}>
+          <img
+            src={imageMobile}
+            alt={`${title} mobile`}
+            loading="lazy"
+            decoding="async"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+          />
+        </div>
+      </div>
+    );
+  }
+
+  /* ── Single image with thum.io fallback ───────────────── */
+  if (failed) return null; // lets FallbackPreview show through
 
   return (
     <img
       src={src}
       alt={`${title} screenshot`}
       onError={() => {
-        if (src === image) { setSrc(fallbackUrl); }   // try thum.io
-        else               { setFailed(true); }        // give up
+        if (src === image) { setSrc(fallbackUrl); }
+        else               { setFailed(true); }
       }}
       style={{
         position: 'relative', zIndex: 1,
@@ -177,11 +206,7 @@ function EnterpriseCard({ project, index }) {
     >
       {/* Screenshot preview */}
       <div style={{ position: 'relative', height: 190, overflow: 'hidden', background: '#0a0a14', flexShrink: 0 }}>
-        <ProjectImage image={project.image} url={project.url} title={project.title} />
-        {/* FallbackPreview sits underneath; shows through when img is absent */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <FallbackPreview title={project.title} color={catColor} />
-        </div>
+        <ProjectImage image={project.image} imageMobile={project.imageMobile} url={project.url} title={project.title} />
 
         {/* Overlay gradient at bottom */}
         <div style={{
@@ -309,10 +334,7 @@ function PersonalCard({ project, index }) {
     >
       {/* Screenshot */}
       <div style={{ position: 'relative', height: 200, overflow: 'hidden', background: '#0a0a14', flexShrink: 0 }}>
-        <ProjectImage image={project.image} url={project.url} title={project.title} />
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <FallbackPreview title={project.title} color={catColor} />
-        </div>
+        <ProjectImage image={project.image} imageMobile={project.imageMobile} url={project.url} title={project.title} />
 
         <div style={{
           position: 'absolute', bottom: 0, left: 0, right: 0, height: 60,

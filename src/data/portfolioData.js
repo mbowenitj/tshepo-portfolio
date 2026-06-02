@@ -1,3 +1,9 @@
+import spinLaptop    from '../assets/project/project-3-laptop.jpg';
+import spinMobile    from '../assets/project/project-3-mobile.jpg';
+import spendLaptop   from '../assets/project/project-4-laptop.jpg';
+import spendMobile   from '../assets/project/project-4-mobile.jpg';
+import shosholozaApp from '../assets/project/shosholoza-app.png';
+
 export const personal = {
   name: 'Tshepo Mboweni',
   title: 'Frontend Engineer',
@@ -141,7 +147,7 @@ export const thumb = (url) =>
 export const enterpriseProjects = [
   {
     title: 'Grosvenor Casinos',
-    image: '/projects/grosvenor.png',
+    image: '/projects/grosvenor.webp',
     company: 'Rank Interactive',
     period: '2022 – 2026',
     description: "UK's most iconic land-based casino brand's full digital platform. Delivered feature-rich front-end experiences across web and mobile for millions of players.",
@@ -151,7 +157,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'Bella Casino',
-    image: '/projects/bella.png',
+    image: '/projects/bella.webp',
     company: 'Rank Interactive',
     period: '2022 – 2026',
     description: 'Premium online casino platform built for Rank Interactive. Focused on high-performance UI, responsive design and seamless player experience.',
@@ -161,7 +167,8 @@ export const enterpriseProjects = [
   },
   {
     title: 'Spin & Win',
-    image: '/projects/spinandwin.png',
+    image: spinLaptop,
+    imageMobile: spinMobile,
     company: 'Rank Interactive',
     period: '2022 – 2026',
     description: 'Online slots and casino games portal. Contributed to game lobby UI, promotions pages and mobile-optimised layouts.',
@@ -171,7 +178,8 @@ export const enterpriseProjects = [
   },
   {
     title: 'Spend Manager',
-    image: '/projects/spendmanager.png',
+    image: spendLaptop,
+    imageMobile: spendMobile,
     company: 'Adapt IT Holding LTD',
     period: '2020 – 2022',
     description: 'South African corporate spend management and procurement platform. Built responsive dashboards, forms and data-table interfaces.',
@@ -181,7 +189,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'USB-ED Online Applications',
-    image: '/projects/usb-ed.png',
+    image: '/projects/usb-ed.webp',
     company: 'Adapt IT Holding LTD',
     period: '2020 – 2022',
     description: 'University of Stellenbosch Business School online application portal. Engineered multi-step application forms and workflow management screens.',
@@ -191,7 +199,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'Presles Online',
-    image: '/projects/presles.png',
+    image: '/projects/presles.webp',
     company: 'Adapt IT Holding LTD',
     period: '2020 – 2022',
     description: 'Online learning and distance education platform. Developed course listing, student dashboards and registration flows.',
@@ -201,7 +209,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'CEM Events Platform',
-    image: '/projects/cem.png',
+    image: '/projects/cem.webp',
     company: 'Engagement Factory',
     period: '2017 – 2018',
     description: "Customer experience management events microsite built for Engagement Factory's marketing campaigns. Responsive, animated landing pages.",
@@ -211,7 +219,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'Ricoh UK',
-    image: '/projects/ricoh.png',
+    image: '/projects/ricoh.webp',
     company: 'EOH',
     period: '2019 – 2020',
     description: 'Corporate website for Ricoh UK — a global imaging and IT services leader. Implemented new features, improved performance and maintained responsive layouts.',
@@ -221,7 +229,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'Thales Group',
-    image: '/projects/thales.png',
+    image: '/projects/thales.webp',
     company: 'EOH',
     period: '2019 – 2020',
     description: 'Global technology company website serving defence, aerospace and digital security sectors. Contributed to front-end feature development and performance optimisation.',
@@ -231,7 +239,7 @@ export const enterpriseProjects = [
   },
   {
     title: 'McLaren',
-    image: '/projects/mclaren.png',
+    image: '/projects/mclaren.webp',
     company: 'Engagement Factory / EOH',
     period: '2018 – 2020',
     description: "Premium automotive brand digital presence. Worked on interactive, high-fidelity UI components reflecting McLaren's luxury and performance identity.",
@@ -244,7 +252,7 @@ export const enterpriseProjects = [
 export const personalProjects = [
   {
     title: 'BakkieOffload',
-    image: '/projects/bakkieoffload.png',
+    image: '/projects/bakkieoffload.webp',
     status: 'Live',
     description: 'Uber-like cross-platform mobile app for bakkie (pickup truck) transportation in South Africa. Connects users needing to haul bulky items with nearby drivers for on-demand or scheduled trips.',
     highlights: [
@@ -259,7 +267,7 @@ export const personalProjects = [
   },
   {
     title: 'MboWeezy Hub',
-    image: '/projects/mboweezyhub.png',
+    image: '/projects/mboweezyhub.webp',
     status: 'Live',
     description: 'Personal brand and creative hub showcasing music, content and lifestyle. A dynamic multi-page web experience built with modern front-end tooling.',
     highlights: [
@@ -273,7 +281,7 @@ export const personalProjects = [
   },
   {
     title: 'Magona Media',
-    image: '/projects/magonamedia.png',
+    image: '/projects/magonamedia.webp',
     status: 'Live',
     description: 'Digital media and creative agency website. Clean, professional showcase site for brand storytelling and media services.',
     highlights: [
@@ -282,12 +290,12 @@ export const personalProjects = [
       'SEO-optimised structure',
     ],
     url: 'https://magonamedia.co.za/',
-    tech: ['React', 'TypeScript', 'Tailwind CSS'],
+    tech: ['WordPress', 'PHP', 'CSS3', 'JavaScript'],
     category: 'Web App',
   },
   {
     title: 'Shosholoza FC',
-    image: '/projects/shosholoza.png',
+    image: shosholozaApp,
     status: 'Live',
     description: 'Football club management platform with member login, team roster, fixtures and results tracking for a South African football club.',
     highlights: [
