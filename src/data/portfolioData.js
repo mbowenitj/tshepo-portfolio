@@ -41,12 +41,12 @@ export const skills = [
   {
     category: 'Cross-Platform Mobile',
     color: '#f59e0b',
-    items: ['React Native', 'Ionic', 'Capacitor', 'Cordova', 'Expo', 'Flutter (basics)', 'PWA', 'iOS & Android deployment'],
+    items: ['React Native', 'Ionic', 'Capacitor', 'Expo', 'PWA'],
   },
   {
     category: 'Tools & Workflow',
     color: '#10b981',
-    items: ['Git / GitHub / Bitbucket', 'CI/CD (GitHub Actions, Jenkins)', 'Jira', 'Figma', 'Umbraco CMS', 'TeamCity', 'Docker basics', 'Agile / Scrum'],
+    items: ['Git / GitHub / Bitbucket', 'CI/CD (GitHub Actions, Jenkins)', 'Jira', 'Figma', 'Umbraco CMS', 'TeamCity', 'Docker', 'Agile / Scrum'],
   },
 ];
 
