@@ -283,7 +283,7 @@ function EnterpriseCard({ project, index }) {
           {project.description}
         </p>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginTop: 'auto', paddingTop: '0.5rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', paddingTop: '0.5rem' }}>
           {project.tech.map(t => (
             <span key={t} style={{
               fontFamily: 'var(--font-mono)',
@@ -297,6 +297,33 @@ function EnterpriseCard({ project, index }) {
             }}>{t}</span>
           ))}
         </div>
+
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            marginTop: '0.75rem',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            fontSize: '0.78rem',
+            fontFamily: 'var(--font-head)',
+            fontWeight: 600,
+            color: catColor,
+            border: `1px solid ${catColor}40`,
+            borderRadius: 8,
+            padding: '0.45rem 1rem',
+            textDecoration: 'none',
+            background: `${catColor}08`,
+            transition: 'background 0.2s, border-color 0.2s',
+            alignSelf: 'flex-start',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.background = `${catColor}20`; e.currentTarget.style.borderColor = `${catColor}80`; }}
+          onMouseLeave={e => { e.currentTarget.style.background = `${catColor}08`; e.currentTarget.style.borderColor = `${catColor}40`; }}
+        >
+          <HiExternalLink size={13} /> Visit Site
+        </a>
       </div>
     </div>
   );
@@ -428,7 +455,7 @@ function PersonalCard({ project, index }) {
           ))}
         </ul>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginTop: 'auto', paddingTop: '0.4rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', paddingTop: '0.4rem' }}>
           {project.tech.map(t => (
             <span key={t} style={{
               fontFamily: 'var(--font-mono)',
@@ -442,6 +469,33 @@ function PersonalCard({ project, index }) {
             }}>{t}</span>
           ))}
         </div>
+
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            marginTop: '0.75rem',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            fontSize: '0.78rem',
+            fontFamily: 'var(--font-head)',
+            fontWeight: 600,
+            color: catColor,
+            border: `1px solid ${catColor}40`,
+            borderRadius: 8,
+            padding: '0.45rem 1rem',
+            textDecoration: 'none',
+            background: `${catColor}08`,
+            transition: 'background 0.2s, border-color 0.2s',
+            alignSelf: 'flex-start',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.background = `${catColor}20`; e.currentTarget.style.borderColor = `${catColor}80`; }}
+          onMouseLeave={e => { e.currentTarget.style.background = `${catColor}08`; e.currentTarget.style.borderColor = `${catColor}40`; }}
+        >
+          <HiExternalLink size={13} /> Visit Site
+        </a>
       </div>
     </div>
   );
