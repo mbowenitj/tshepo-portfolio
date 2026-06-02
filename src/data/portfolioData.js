@@ -17,7 +17,7 @@ export const personal = {
   availability: 'Immediately Available',
 };
 
-export const about = `Creative and detail-driven Frontend Engineer with 8+ years of experience building responsive, maintainable web and cross-platform mobile applications. I translate Figma designs into pixel-perfect, performant code — working comfortably across the full stack when needed.
+export const about = `Creative and detail-driven Frontend Engineer with 8+ years of experience building responsive, maintainable web and cross-platform mobile applications. I translate Figma designs into pixel-perfect, performant code - working comfortably across the full stack when needed.
 
 Known for delivering high-quality code, mentoring junior developers, and driving Agile teams forward. I thrive in collaborative environments where great design meets clean engineering.`;
 
