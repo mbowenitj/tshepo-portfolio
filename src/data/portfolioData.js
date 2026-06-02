@@ -7,7 +7,7 @@ import shosholozaApp from '../assets/project/shosholoza-app.png';
 export const personal = {
   name: 'Tshepo Mboweni',
   title: 'Frontend Engineer',
-  roles: ['React Expert', 'Angular Developer', 'Mobile Engineer', 'UI/UX Implementer'],
+  roles: ['React Expert', 'Angular Developer', 'Cross-Platform Mobile Developer', 'UI/UX Implementer'],
   tagline: '8+ years crafting fast, beautiful, production-ready web & mobile experiences.',
   email: 'mbowenitshepo@gmail.com',
   phone: '078 055 0474 / 060 700 6456',
@@ -40,9 +40,9 @@ export const skills = [
     items: ['Node.js', 'Express.js', 'Next.js', 'GraphQL', 'Firebase', 'MongoDB', 'SQL Server', 'AWS (EC2 / S3)'],
   },
   {
-    category: 'Mobile',
+    category: 'Cross-Platform Mobile',
     color: '#f59e0b',
-    items: ['React Native', 'Ionic', 'Capacitor', 'Cordova', 'Expo', 'PWA'],
+    items: ['React Native', 'Ionic', 'Capacitor', 'Cordova', 'Expo', 'Flutter (basics)', 'PWA', 'iOS & Android deployment'],
   },
   {
     category: 'Tools & Workflow',
