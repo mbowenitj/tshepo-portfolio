@@ -151,7 +151,7 @@ export const enterpriseProjects = [
     period: '2022 – 2026',
     description: "UK's most iconic land-based casino brand's full digital platform. Delivered feature-rich front-end experiences across web and mobile for millions of players.",
     url: 'https://www.grosvenorcasinos.com/',
-    tech: ['Angular', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'AWS'],
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'AWS'],
     category: 'Gaming Platform',
   },
   {
@@ -161,7 +161,7 @@ export const enterpriseProjects = [
     period: '2022 – 2026',
     description: 'Premium online casino platform built for Rank Interactive. Focused on high-performance UI, responsive design and seamless player experience.',
     url: 'https://www.bellacasino.com/',
-    tech: ['Angular', 'TypeScript', 'SCSS', 'REST APIs'],
+    tech: ['React', 'TypeScript', 'SCSS', 'REST APIs'],
     category: 'Gaming Platform',
   },
   {
@@ -172,7 +172,7 @@ export const enterpriseProjects = [
     period: '2022 – 2026',
     description: 'Online slots and casino games portal. Contributed to game lobby UI, promotions pages and mobile-optimised layouts.',
     url: 'https://www.spinandwin.com/',
-    tech: ['Angular', 'TypeScript', 'Tailwind CSS', 'Jenkins CI'],
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Jenkins CI'],
     category: 'Gaming Platform',
   },
   {
@@ -189,7 +189,7 @@ export const enterpriseProjects = [
   {
     title: 'USB-ED Online Applications',
     image: '/projects/usb-ed.webp',
-    company: 'Adapt IT Holding LTD',
+    company: 'EOH',
     period: '2020 – 2022',
     description: 'University of Stellenbosch Business School online application portal. Engineered multi-step application forms and workflow management screens.',
     url: 'https://applications.usb-ed.com/?iID=c9a37630-0836-e511-80c8-005056b8008e',
@@ -199,7 +199,7 @@ export const enterpriseProjects = [
   {
     title: 'Presles Online',
     image: '/projects/presles.webp',
-    company: 'Adapt IT Holding LTD',
+    company: 'EOH',
     period: '2020 – 2022',
     description: 'Online learning and distance education platform. Developed course listing, student dashboards and registration flows.',
     url: 'https://online.presles.co.za/landing',
@@ -219,17 +219,17 @@ export const enterpriseProjects = [
   {
     title: 'Ricoh UK',
     image: '/projects/ricoh.webp',
-    company: 'EOH',
+    company: 'Engagement Factory',
     period: '2019 – 2020',
     description: 'Corporate website for Ricoh UK — a global imaging and IT services leader. Implemented new features, improved performance and maintained responsive layouts.',
     url: 'https://www.ricoh.co.uk/',
-    tech: ['Angular 7', 'TypeScript', 'Bootstrap', 'Node.js'],
+    tech: ['JavaScript', 'HTML5', 'Bootstrap', 'CSS3'],
     category: 'Corporate',
   },
   {
     title: 'Thales Group',
     image: '/projects/thales.webp',
-    company: 'EOH',
+    company: 'Engagement Factory',
     period: '2019 – 2020',
     description: 'Global technology company website serving defence, aerospace and digital security sectors. Contributed to front-end feature development and performance optimisation.',
     url: 'https://www.thalesgroup.com/en',
@@ -239,7 +239,7 @@ export const enterpriseProjects = [
   {
     title: 'McLaren',
     image: '/projects/mclaren.webp',
-    company: 'Engagement Factory / EOH',
+    company: 'Engagement Factory',
     period: '2018 – 2020',
     description: "Premium automotive brand digital presence. Worked on interactive, high-fidelity UI components reflecting McLaren's luxury and performance identity.",
     url: 'https://www.mclaren.com/',
