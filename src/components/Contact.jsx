@@ -1,5 +1,5 @@
 import { HiMail, HiPhone, HiLocationMarker, HiChatAlt2 } from 'react-icons/hi';
-import { FaLinkedin, FaGlobe } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import { personal } from '../data/portfolioData';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -24,13 +24,6 @@ const contactItems = [
     value: 'linkedin.com/in/tshepo-mboweni',
     href: personal.linkedin,
     color: '#0A66C2',
-  },
-  {
-    icon: <FaGlobe size={22} />,
-    label: 'Portfolio',
-    value: 'tshepomboweniportfolio.netlify.app',
-    href: personal.portfolio,
-    color: 'var(--amber)',
   },
   {
     icon: <HiLocationMarker size={22} />,

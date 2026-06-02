@@ -50,9 +50,6 @@ export default function About() {
               <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="btn-primary">
                 <FaLinkedin size={16} /> View LinkedIn
               </a>
-              <a href={personal.portfolio} target="_blank" rel="noopener noreferrer" className="btn-outline">
-                Live Portfolio
-              </a>
             </div>
           </div>
 

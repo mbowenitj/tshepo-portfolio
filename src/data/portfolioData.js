@@ -13,7 +13,6 @@ export const personal = {
   phone: '078 055 0474 / 060 700 6456',
   location: 'Cape Town, South Africa',
   linkedin: 'https://linkedin.com/in/tshepo-mboweni',
-  portfolio: 'https://tshepomboweniportfolio.netlify.app/',
   availability: 'Immediately Available',
 };
 
