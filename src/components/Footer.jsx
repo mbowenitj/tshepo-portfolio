@@ -46,7 +46,7 @@ export default function Footer() {
               gap: '0.35rem',
             }}
           >
-            Built with <HiHeart style={{ color: 'var(--purple)' }} /> &copy; {year}
+            Tshepo Mboweni. All Rights Reserved &copy; {year}
           </p>
 
           {/* Right – socials */}
