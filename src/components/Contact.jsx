@@ -90,27 +90,7 @@ export default function Contact() {
               or an exciting project. My inbox is always open. Let's talk!
             </p>
 
-            {/* Availability indicator */}
-            <div
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.6rem',
-                padding: '0.6rem 1.25rem',
-                borderRadius: 50,
-                background: 'rgba(16,185,129,0.08)',
-                border: '1px solid rgba(16,185,129,0.25)',
-                fontFamily: 'var(--font-mono)',
-                fontSize: '0.82rem',
-                color: '#10b981',
-                marginBottom: '2rem',
-              }}
-            >
-              {/* <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#10b981', display: 'inline-block', animation: 'pulse-dot2 2s ease-in-out infinite' }} />
-              Immediately Available */}
-            </div>
-
-            <a href={`mailto:${personal.email}`} className="btn-primary" style={{ display: 'inline-flex' }}>
+            <a href={`mailto:${personal.email}`} className="btn-primary btn-glow" style={{ display: 'inline-flex' }}>
               <HiMail size={18} /> Send Me an Email
             </a>
           </div>
