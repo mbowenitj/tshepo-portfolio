@@ -22,7 +22,7 @@ Known for delivering high-quality code, mentoring junior developers, and driving
 
 export const stats = [
   { value: '8+', label: 'Years Experience' },
-  { value: '6', label: 'Companies' },
+  { value: '14', label: 'Projects' },
   { value: '5', label: 'Languages Spoken' },
   { value: '∞', label: 'Passion for Code' },
 ];
