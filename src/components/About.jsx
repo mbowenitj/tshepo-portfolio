@@ -9,7 +9,7 @@ const details = [
   { icon: <HiMail           size={18} />, label: 'Email',        value: personal.email, href: `mailto:${personal.email}` },
   { icon: <FaLinkedin       size={18} />, label: 'LinkedIn',     value: 'tshepo-mboweni', href: personal.linkedin },
   { icon: <HiTranslate      size={18} />, label: 'Languages',    value: languages.join(', ') },
-  { icon: <HiCheckCircle    size={18} />, label: 'Availability', value: personal.availability },
+  // { icon: <HiCheckCircle    size={18} />, label: 'Availability', value: personal.availability },
 ];
 
 export default function About() {

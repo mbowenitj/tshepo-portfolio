@@ -10,10 +10,10 @@ export const personal = {
   roles: ['React Expert', 'Angular Developer', 'Cross-Platform Mobile Developer', 'UI/UX Implementer'],
   tagline: '8+ years crafting fast, beautiful, production-ready web & mobile experiences.',
   email: 'mbowenitshepo@gmail.com',
-  phone: '078 055 0474 / 060 700 6456',
+  phone: ' 060 700 6456 / 078 055 0474',
   location: 'Cape Town, South Africa',
   linkedin: 'https://linkedin.com/in/tshepo-mboweni',
-  availability: 'Immediately Available',
+  // availability: 'Immediately Available',
 };
 
 export const about = `Creative and detail-driven Frontend Engineer with 8+ years of experience building responsive, maintainable web and cross-platform mobile applications. I translate Figma designs into pixel-perfect, performant code - working comfortably across the full stack when needed.
@@ -36,7 +36,7 @@ export const skills = [
   {
     category: 'Back-End & Cloud',
     color: '#06b6d4',
-    items: ['Node.js', 'Express.js', 'Next.js', 'GraphQL', 'Firebase', 'MongoDB', 'SQL Server', 'AWS (EC2 / S3)'],
+    items: ['Node.js', 'Express.js', 'Next.js', 'REST API', 'GraphQL', 'Firebase', 'MongoDB', 'SQL Server', 'AWS (EC2 / S3)'],
   },
   {
     category: 'Cross-Platform Mobile',
@@ -46,7 +46,7 @@ export const skills = [
   {
     category: 'Tools & Workflow',
     color: '#10b981',
-    items: ['Git / GitHub / Bitbucket', 'CI/CD (GitHub Actions, Jenkins)', 'Jira', 'Figma', 'Umbraco CMS', 'TeamCity', 'Docker', 'Agile / Scrum'],
+    items: ['Git / GitHub / Bitbucket', 'CI/CD (GitHub Actions, Jenkins)', 'Jira', 'Figma', 'Umbraco CMS', 'TeamCity', 'Octopus Deploy', 'Docker', 'Agile / Scrum'],
   },
 ];
 
@@ -64,7 +64,7 @@ export const experience = [
       'Contributed to MongoDB and Umbraco CMS integrations; deployed and managed AWS (EC2, S3) infrastructure',
       'Mentored junior developers, conducted code reviews, and facilitated Agile/Scrum ceremonies',
     ],
-    tech: ['Angular', 'React', 'React Native', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'AWS', 'Jenkins'],
+    tech: ['React', 'Angular', 'React Native', 'TypeScript','JavaScript', 'GraphQL','GitHubActions','Cloudflare Deployment', 'Tailwind CSS', 'MongoDB', 'AWS S3 Buckets', 'Jenkins'],
     reasonForLeaving: 'Company downsizing due to increased UK tax on gambling companies.',
   },
   {

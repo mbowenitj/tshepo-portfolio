@@ -106,8 +106,8 @@ export default function Contact() {
                 marginBottom: '2rem',
               }}
             >
-              <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#10b981', display: 'inline-block', animation: 'pulse-dot2 2s ease-in-out infinite' }} />
-              Immediately Available
+              {/* <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#10b981', display: 'inline-block', animation: 'pulse-dot2 2s ease-in-out infinite' }} />
+              Immediately Available */}
             </div>
 
             <a href={`mailto:${personal.email}`} className="btn-primary" style={{ display: 'inline-flex' }}>
